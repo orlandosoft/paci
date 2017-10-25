@@ -1,33 +1,111 @@
 .divided-left, .divided-right {
-  border-bottom: solid 2px $grave;
-  height: 100vh;
+  height: 120%;
 }
 
+.left-image{
+    padding-left: 0 !important;
+}
+
+.right-image{
+   padding-right: 0 !important;
+ 
+}
+
+.turquoise-section{
+  background-color:$turquoise;
+    
+  .text-white{
+    color: $white;
+  }
+}
+.divided-side-big {
+  width: 60% !important;
+}
+.divided-side-small {
+  width: 40% !important;
+}
 .divided-side {
   float: left;
   font-family: Muli-Light;
-  height: 100vh;
-  padding: 5%;
+  height: 100%;
   position: relative;
-  width: 50%;
-
   .divided-image {
   	@include center(false,true);
-
-  	max-height: 100vh;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+  	max-height: 100vh;   
   	padding-top: 75%;
   	width: 80%;
   }
-
+  
+ 
+  
+  .first-image{
+    background-image: url("../assets/images/sistemaweb.png");  
+  }
+  .second-image{
+    background-image: url("../assets/images/graficoPotencial.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: all 200ms ease-in;
+    max-height: 100vh;   
+  	padding-top: 75%;
+  	width: 60%;
+  }
+  .js-second-image-animate-down{
+    width: 70%;
+  }
+  .js-second-image-animate-up{
+    width: 60%;
+  }
+ 
+  .third-image{
+    position: absolute;
+    background-image: url("../assets/images/graficoApp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0;
+  	max-height: 100vh;   
+  	padding-top: 75%;
+    height: 90%;
+  	width: 70%; 
+    margin-left: 10%;
+  }
+  
+  .fourth-image{
+    background-image: url("../assets/images/grafico.png"); 
+    right: 0;
+    transition: all 200ms ease-in;
+  }
+  .js-fourth-image-animate-down{
+    top: 60%;
+  }
+  .js-fourth-image-animate-up{
+    top:50%;
+  }
+ 
+  .right-text{
+      padding-right: 10%;
+  }
+  
+  .left-text{
+      padding-left: 10%;
+  }
+  
   .divided-wrapper {
     @include center(false,true);
-
-    color: $grave;
-    width: 70%;
-
+    font-family: Muli-ExtraLight;
+    color: $footerLink;
+    width: 100%;
+    
+   
     .divided-title {
       font-size: 3.6em;
-      max-width: 300px;
+      max-width: 350px;
     }
 
     .divided-text {
@@ -49,6 +127,12 @@
         background-color: $ashes;
         cursor: pointer;
       }
+    }
+    
+    .demo-button{
+      background-color: $white;
+      color: $footerLink;
+        
     }
   }
 }

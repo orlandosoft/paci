@@ -26,8 +26,10 @@
   	box-sizing: border-box;
     float: left;
     font-size: 1.6em;
-    padding: 0 1.5em;
-    width: 70%;
+    margin-bottom: 5%;
+    padding: 0 5em;
+    width: 100%;
+    
 
     .post-date {
       color: $grave;
@@ -42,29 +44,32 @@
     }
   }
 
-  .post-aside {
-  	box-sizing: border-box;
-    float: left;
+  .post-down {
     padding: 0 1.5em;
-    width: 30%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
 
     .post-label {
-      color: $grave;
-      font-size: 2em;
-      margin: 0;
+      color: $grayBlog;
+      font-family: Muli-ExtraLight;
+      font-size: 1.8em;	
+      font-weight: 300;
+      line-height: 23px;
     }
 
     .post-item {
-      box-sizing: border-box;
       color: $black;
       cursor: pointer;
       display: inline-block;
       margin: 0 -1px;
-      padding: 2.5em 1.5em;
+      padding: 0;
       text-align: left;
       text-decoration: none;
       vertical-align: top;
-      width: 100%;
+      width: 23.63%;
+      margin: 1%;
+      min-width: 200px;
 
       &:hover {
         background-color: $lightGrey;
@@ -76,16 +81,59 @@
       }
 
       .post-lasttitle {
+        color: $footerLink;	
+        font-family: Muli-extraLight;	
         font-size: 2em;
-        font-weight: bold;
-        margin: 0.3em 0 0;
+        padding: 10px;
       }
 
       .post-info {
-        color: $grave;
-        font-size: 1.1em;
+        color: $footerLink;
+        font-family: Muli-extraLight;
+        font-size: 14px;
+        font-weight: 300;
         margin: 0.5em 0 0;
+        padding: 10px;
+      }
+      
+      .show-more{
+        color: #757779;
+        height: 20px;	        
+        font-family: Muli;
+        font-size: 16px;	
+        font-weight: 800;
+        line-height: 20px;
+        text-align: center;
+        width:100%;
+      }
+      
+    }  
+  }
+  .button-back-post{
+      height: 38px;
+      width: 180px;
+      border-radius: 100px;
+      border: none;
+      background-color: #ADD44C;
+      color: $white;
+      text-align: center;
+      padding: 10px;
+      font-family: Muli-ExtraLight;
+      font-size: 13px;
+      line-height: 16px;
+      
+      @include center(true,false);
+      
+      &:hover {
+        background-color: $ashes;
+        cursor: pointer;
       }
     }
+  a{
+    text-decoration: none;
+    color:$white; 
+  }
+  a:link{
+    color: $white;
   }
 }

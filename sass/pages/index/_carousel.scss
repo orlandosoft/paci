@@ -1,0 +1,29 @@
+.sliderText{
+  position: absolute;
+  top: 80%;
+  z-index: 3;
+  height: 2;
+}
+
+.carousel-item{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  z-index: 5 !important;
+}
+
+.active1{
+  background-image:url("../assets/images/slider1.jpg");
+}
+
+.active2{
+  background-image:url("../assets/images/sliderHero2.jpg");
+}
+
+.active3{
+  background-image:url("../assets/images/sliderHero3.jpg");
+}

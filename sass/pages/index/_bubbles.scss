@@ -20,11 +20,58 @@
   }
 
   .bubble-item {
-  	background-color: $ashes;
-  	border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
   	display: inline-block;
   	height: 86px;
   	margin: 1.5em 4vw;
   	width: 86px;
+  }
+  
+  .abb-image{
+    background-image: url("../assets/images/ABB.svg");  
+    height: 50px;
+  }
+  
+  .volkswagen-image{
+    background-image: url("../assets/images/Volkswagen.png");  
+  }
+  
+  .synthon-image{
+    background-image: url("../assets/images/Synthon.svg"); 
+    height: 50px;
+  }
+  
+  .nord-image{
+    background-image: url("../assets/images/Nord.svg");  
+    height: 70px;
+  }
+  
+  .lloids-image{
+    background-image: url("../assets/images/LLOYDS.svg");  
+    height: 50px;
+  }
+  
+  .aktua-image{
+    background-image: url("../assets/images/Aktua.svg"); 
+    height: 50px;
+  }
+  
+  .zf-image{
+    background-image: url("../assets/images/ZF.svg");      
+  }
+  
+  .sodexo-image{
+    background-image: url("../assets/images/sodexo.svg"); 
+    height: 50px;
+  }
+  
+  .veolia-image{
+    background-image: url("../assets/images/VEOLIA.svg");      
+    height: 40px;
+  }
+  
+  .espana-image{
+    background-image: url("../assets/images/Espana.svg");      
   }
 }

@@ -1,12 +1,15 @@
+.footer-margin{
+  margin-top: 100px;
+}
+
 .footer {
   font-family: Muli;
-
   border-top: solid 1px $ashes;
 
   .footer-info {
     float: left;
-    padding: 40px 20px;
-    width: 200px;
+    padding: 40px 40px;
+    width: 250px;
 
     .footer-item {
       margin: 40px 0 0;
@@ -19,24 +22,42 @@
 
     .footer-social {
       margin: 1em 0 0;
-      text-align: center;
+      text-align: left;
+    }
+    
+    .padding-footer{
+      padding-left: 7px;
     }
 
     .footer-network {
-      background-color: $ashes;
-      border-radius: 50%;
       display: inline-block;
       height: 22px;
       margin: 0 0.5em;
+      background-size: contain;
+      background-repeat: no-repeat;
       width: 22px;
+    }
+    .footer-facebook{
+      background-image: url("../assets/images/Facebook.svg");
+    }
+    .footer-youtube{
+   
+      background-image: url("../assets/images/Youtube.svg");
+      width: 2.4em;
+    }
+    .footer-vimeo{
+      background-image: url("../assets/images/Vimeo.svg");
+    }
+    .footer-twitter{
+      background-image: url("../assets/images/Twitter.svg");
     }
   }
 
   .footer-navigation {
     float: left;
     padding: 40px 20px;
-    text-align: center;
-    width: calc(100% - 200px);
+    text-align: right;
+    width: calc(100% - 280px);
   }
 
   .footer-item {
@@ -48,7 +69,8 @@
 
     .footer-header {
       color: $footerLink;
-      font-weight: bold;
+      font-weight: 800;
+      font-family: 'Muli';
       text-transform: uppercase;
     }
 

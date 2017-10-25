@@ -12,7 +12,7 @@ function getPosts() {
 }
 
 function showPosts(data) {
-  for (var i = 0; i <= data.length; i++) {
+  for (var i = 0; i <= 2; i++) {
     var background = data[i].featured_media_url;
     var image = '.post-image'+i+'';
     var title = data[i].title.rendered;
@@ -26,7 +26,7 @@ function showPosts(data) {
         '<h3 class="post-title">'+title+'</h3>'+
         '<div class="post-excerpt">'+content+'</div>'+
         '<p class="post-date">'+date+'</p>'+
-        '<p class="show-more">VER MÁS</p>'
+        '<p class="show-more">VER MÁS</p>'+
       '</a>';
 
     $('.blog-posts').append(item);

@@ -1,5 +1,5 @@
 .contactInfo {
-  background-color:darkgray; 
+  background-color:#4A4A4A; 
   text-align: center;
   width: 100%;    
     
@@ -60,7 +60,8 @@
     }   
       
     .btnEnviar {
-      background-color: #DADADA;    
+      background-color: #ADD44C;  
+      color: $white;
       font-size: 18px;
       font-weight: 600;
       line-height: 23px;

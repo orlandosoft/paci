@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qBAAsB;EACpB,OAAO,EAAE,GAAG",
+"sources": ["../../sass/themes/sky-theme.scss"],
+"names": [],
+"file": "sky-theme.css"
+}

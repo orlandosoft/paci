@@ -22,7 +22,7 @@ function getPost() {
 
 function drawPost(data) {
   var background = data.featured_media_url;
-  var title = data.title.rendered
+  var title = data.title.rendered;
   var date = dateConverter(data.date);
   var content = data.content.rendered;
 
@@ -33,7 +33,7 @@ function drawPost(data) {
 }
 
 function drawLast(data) {
-  for (var i = 3; i >= 0; i--) {
+  for (var i = 2; i >= 0; i--) {
     var background = data[i].featured_media_url;
     var image = '.post-image'+i+'';
     var title = data[i].title.rendered;
@@ -45,6 +45,7 @@ function drawLast(data) {
         '<div class="post-image post-image'+i+'"></div>'+
         '<h3 class="post-lasttitle">'+title+'</h3>'+
         '<p class="post-info">'+date+'</p>'+
+        '<p class="show-more">VER MÁS</p>'+
       '</a>';
 
     $('.post-label').after(news);

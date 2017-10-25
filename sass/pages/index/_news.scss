@@ -1,0 +1,37 @@
+.news{
+  background-color: $lightGreen;
+    
+    .news-button{
+      border: none;
+      border-radius: 100px;
+      background-color: $white;
+      color: $footerLink;
+      height: 3.8em;
+      font-family: Muli;
+      font-size: 1.3em;	
+      line-height: 1.6em;	  	
+      width: 18em;	
+      
+       &:hover {
+        background-color: $ashes;
+        cursor: pointer;
+      }
+    }
+    
+    .last-news{
+      color: $white;
+      font-family: Muli-extraLight;
+      font-size: 3.6em;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 45px;
+      padding-top: 4%;
+    }
+  
+    .blog-posts .post-item {
+      background-color: $white;
+      padding: 0;
+      margin: 10px;
+      width: 23.36% !important;
+  }
+}
