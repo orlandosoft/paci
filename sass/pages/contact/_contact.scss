@@ -1,0 +1,89 @@
+body{
+	background-color: #F7F7F7;
+}
+
+.contact-div{
+	background-color: #F7F7F7;
+	@include center(true,true);
+
+	.contact-form{
+		background-color: #F7F7F7;
+		@include center(true,true);
+
+		.contact-h1{
+			text-align: center;	
+			color: #757779;	
+			font-family: Muli-Light;	
+			font-size: 36px;	
+			font-weight: 300;	
+			line-height: 45px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			margin-bottom: auto;
+		}
+
+		.contact-p{
+			color: #757779;	
+			font-family: Muli-Light;	
+			font-size: 14px;	
+			font-weight: 300;	
+			line-height: 18px;	
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			margin-bottom: 40px;
+			margin-top: auto;
+		}
+
+		.contact-input{
+			font-family: Muli-ExtraLight;
+			background-color: #F7F7F7;
+			border-width: 0;
+			font-size: 24px;
+			color: #757779;
+			border-bottom: 1px solid #757779;
+			line-height: 50px;
+			margin-bottom: 15px;
+			width: 60vh;
+		}
+
+		.contact-textarea{
+			margin-top: 20px;
+			background-color: #F7F7F7;
+			color: #757779;
+			border: 1px solid #979797;	
+			border-radius: 4px;
+		}
+
+		.contact-button{
+			font-family: Muli-ExtraLight;
+			width: 50%;	
+			border-radius: 100px;
+			background-color: #ADD44C;
+			color: $white;
+			padding: 8px;
+			margin-bottom: 20px;
+			border: none;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 30px;
+			display: block;
+		}
+
+		.contact-p1{
+			color: #757779;	
+			font-family: Muli-Light;	
+			font-size: 12px;	
+			font-weight: 300;	
+			line-height: 18px;	
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			margin-bottom: 40px;
+			margin-top: auto;
+		}
+	}
+}
