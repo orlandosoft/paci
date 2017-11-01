@@ -2,11 +2,11 @@ body{
 	background-color: $lightGrey;
 }
 .new-div{
-	
+	background-color: $lightGrey;
+
 	.new-form{
 		background-color: $lightGrey !important; 
 		width: 30%;
-		background-color: $white;
 		margin-right: auto;
 		margin-left: auto;
 		
@@ -27,7 +27,7 @@ body{
 			font-family: Muli-Light;
 			font-size: 28px;
 			font-weight: 300;
-			line-height: 27px;
+			line-height: 35px;
 			margin-bottom: 50px;
 			text-align: center;
 			margin: 0;
@@ -50,12 +50,12 @@ body{
 				font-family: Muli-ExtraLight;
 				background-color: $lightGrey;
 				border-width: 0;
-				font-size: 20px;
+				font-size: 24px;
 				color: #757779;
 				border-bottom: 1px solid #757779;
 				line-height: 50px;
 				margin-bottom: 15px;
-				width: 50vh;
+				width: 60vh;
 			}
 		}
 
@@ -78,9 +78,7 @@ body{
 			margin-right: auto; 
 			margin-left:  auto; 
 			max-width: 960px; 	
-			padding-right: 10px; 
-			padding-left:  10px;
-			height: 3.09%;
+			padding-right: 10px;
 			color: #757779;	
 			font-family: Muli;	
 			font-size: 10px;	
