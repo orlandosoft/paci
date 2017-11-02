@@ -1,90 +1,63 @@
-body{
-	background-color: $lightGrey;
-}
-.new-div{
-	background-color: $lightGrey;
 
-	.new-form{
-		background-color: $lightGrey !important; 
+.new-div{
+	background-color: $bodyGray;
+
+	.new-form{ 
 		width: 30%;
-		margin-right: auto;
-		margin-left: auto;
+		margin: 0 auto;
+		color: $textGray;
+		text-align: center;
+		font-family: Muli-ExtraLight;
 		
 		.new-h2{
-			height: 5.14%;
-			color: #757779;
-			font-family:  Muli-ExtraLight;
 			font-size: 14px;
 			font-weight: 300;
 			line-height: 27px;
-			text-align: center;
-			margin: 0;
+			margin: 50px 0 0;
 		}
 
 		.new-h1{
-			height: 5.14%;
-			color: #757779;
-			font-family: Muli-Light;
+			font-family: Muli-Light !important;
 			font-size: 28px;
 			font-weight: 300;
 			line-height: 35px;
 			margin-bottom: 50px;
-			text-align: center;
 			margin: 0;
 		}
 
-		.new-inputs{
-			max-width: 960px; 	
-			padding-right: 10px; 
-			padding-left:  10px;
-			background-color: $lightGrey;
-			height: 2.38%;	
-			width: 50%;	
-			color: #757779;	
-			font-family: Muli;	
-			font-size: 24px;	
-			font-weight: 200;	
-			line-height: 30px;
+		.new-inputs{ 	
+			padding: 0 10px;
 			margin-top: 50px;
+			
 			.new-item{
+				background-color: $bodyGray;
 				font-family: Muli-ExtraLight;
-				background-color: $lightGrey;
 				border-width: 0;
 				font-size: 24px;
-				color: #757779;
 				border-bottom: 1px solid #757779;
 				line-height: 50px;
 				margin-bottom: 15px;
-				width: 60vh;
 			}
 		}
 
 		.new-button{
-			font-family: Muli-ExtraLight;
 			width: 50%;	
 			border-radius: 100px;
-			background-color: #ADD44C;
+			background-color: $buttonBack;
 			color: $white;
 			padding: 8px;
-			margin-bottom: 50px;
 			border: none;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 30px;
+			margin: 30px auto 50px auto;
 			display: block;
 		}
 
 		.new-p{
-			margin-right: auto; 
-			margin-left:  auto; 
-			max-width: 960px; 	
-			padding-right: 10px;
-			color: #757779;	
+			margin: 50px auto 30px auto; 
+			max-width: 960px;	
 			font-family: Muli;	
 			font-size: 10px;	
 			font-weight: 200;	
 			line-height: 13px;	
-			text-align: center;
 		}
 	}
 }

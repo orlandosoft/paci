@@ -1,13 +1,14 @@
-.restart-body{
-	background-color: #F7F7F7;
-	
-	.restart-section{
-		background-color: $white;
-		text-align: center;
+.restart-section{
+		background-color: $bodyGray;
+    	text-align: center;
+    	width: 100%;
+    	///with this padding, I centered the div vertically
+    	padding: 150px 0;
 		
 		.restart-div{
-			width:25%;
-			@include center(true,true);
+			width: 25%;
+			margin: 0 auto;
+			display: block;
 			background-color: $white;
 			
 			.restart-form{
@@ -18,35 +19,32 @@
 					-webkit-box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
 					-moz-box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
 					box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
+					font-family: Muli-ExtraLight;
 					
 					.restart-h1{
-						height: 5.14%;
-						color: #757779;
-						font-family: Muli-Light;
+						color: $textGray;
+						font-family: Muli-Light !important;
 						font-size: 20px;
 						font-weight: 300;
 						line-height: 27px;
-						margin-bottom: 50px;
-						margin-top: 50px;
+						margin: 50px 0;
 
 					}
 					
 					.restart-text{
-						font-family: Muli-ExtraLight;
 						background-color: $white;
 						border-width: 0;
 						font-size: 20px;
-						color: #757779;
+						color: $textGray;
 						border-bottom: 1px solid #757779;
 						line-height: 50px;
 						margin-bottom: 50px;
 					}
 					
 					.restart-button{
-						font-family: Muli-ExtraLight;
 						width: 50%;	
 						border-radius: 100px;
-						background-color: #ADD44C;
+						background-color: $buttonBack;
 						color: $white;
 						padding: 8px;
 						margin-bottom: 50px;
@@ -56,4 +54,3 @@
 			}
 		}
 	}
-}

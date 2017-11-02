@@ -1,89 +1,83 @@
-body{
-	background-color: #F7F7F7;
-}
+.contact-section{
+	background-color: $bodyGray;
+    text-align: center;
+    width: 100%;
+    ///with this padding, I centered the div vertically
+    padding: 5px 0;
 
-.contact-div{
-	background-color: #F7F7F7;
-	@include center(true,true);
 
-	.contact-form{
-		background-color: #F7F7F7;
-		@include center(true,true);
+	.contact-div{
+		margin: 0 auto;
+		display: block;
+		width: 30%;
 
-		.contact-h1{
-			text-align: center;	
-			color: #757779;	
-			font-family: Muli-Light;	
-			font-size: 36px;	
-			font-weight: 300;	
-			line-height: 45px;
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-			margin-bottom: auto;
-		}
+		.contact-form{
+			background-color: $bodyGray;
+			color: $textGray;
+			font-family: Muli-Light;
 
-		.contact-p{
-			color: #757779;	
-			font-family: Muli-Light;	
-			font-size: 14px;	
-			font-weight: 300;	
-			line-height: 18px;	
-			text-align: center;
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-			margin-bottom: 40px;
-			margin-top: auto;
-		}
 
-		.contact-input{
-			font-family: Muli-ExtraLight;
-			background-color: #F7F7F7;
-			border-width: 0;
-			font-size: 24px;
-			color: #757779;
-			border-bottom: 1px solid #757779;
-			line-height: 50px;
-			margin-bottom: 15px;
-			width: 60vh;
-		}
+			.contact-h1{
+				margin: 0 auto auto auto;
+				text-align: center;		
+				font-size: 36px;	
+				font-weight: 300;	
+				line-height: 45px;
+				display: block;
+			}
 
-		.contact-textarea{
-			margin-top: 20px;
-			background-color: #F7F7F7;
-			color: #757779;
-			border: 1px solid #979797;	
-			border-radius: 4px;
-		}
+			.contact-p{		
+				margin: auto auto 40px auto;
+				font-size: 14px;	
+				font-weight: 300;	
+				line-height: 18px;	
+				text-align: center;
+				display: block;
+				padding: 0 10px;
+			}
 
-		.contact-button{
-			font-family: Muli-ExtraLight;
-			width: 50%;	
-			border-radius: 100px;
-			background-color: #ADD44C;
-			color: $white;
-			padding: 8px;
-			margin-bottom: 20px;
-			border: none;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 30px;
-			display: block;
-		}
+			.contact-input{
+				color: $textGray;
+				font-family: Muli-ExtraLight;
+				background-color: $bodyGray;
+				border-width: 0;
+				font-size: 24px;
+				border-bottom: 1px solid #757779;
+				line-height: 50px;
+				margin-bottom: 15px;
+				width: 60vh;
+			}	
 
-		.contact-p1{
-			color: #757779;	
-			font-family: Muli-Light;	
-			font-size: 12px;	
-			font-weight: 300;	
-			line-height: 18px;	
-			text-align: center;
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-			margin-bottom: 40px;
-			margin-top: auto;
+			.contact-textarea{
+				font-family: Muli-Light;
+				margin-top: 20px;
+				background-color: $bodyGray;
+				border: 1px solid #979797;	
+				border-radius: 4px;
+				color: $textGray;
+			}
+
+			.contact-button{
+				margin: 30px auto 20px auto;
+				font-family: Muli-ExtraLight;
+				width: 50%;	
+				border-radius: 100px;
+				background-color: $buttonBack;
+				color: $white;
+				padding: 8px;
+				border: none;
+				display: block;
+			}
+
+			.contact-p1{		
+				margin: auto auto 40px auto;
+				font-size: 12px;	
+				font-weight: 300;	
+				line-height: 18px;	
+				text-align: center;
+				display: block;
+
+			}
 		}
 	}
 }

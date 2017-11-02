@@ -1,14 +1,16 @@
-body{
-	
-}
 
-section{
-	width: 100vh;
-	background-color: #F7F7F7;
+
+.login-section{
+	background-color: $bodyGray;
+    text-align: center;
+    width: 100%;
+    ///with this padding, I centered the div vertically
+    padding: 150px 0;
 
 	.login-div{
 		width: 25%;
-		@include center(true,true);
+		margin: 0 auto;
+		display: block;
 		background-color: $white;
 		
 		.login-form{
@@ -20,13 +22,13 @@ section{
 				-webkit-box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
 				-moz-box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
 				box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
+				font-family: Muli-ExtraLight;
+				color: $textGray;
 				
 				.login-h1{
 					margin-right: auto;
 					margin-left: auto;
-					display: block;
-					color: #757779;	
-					font-family: Muli-ExtraLight;	
+					display: block;		
 					font-size: 32px;	
 					font-weight: 200;	
 					line-height: 40px;
@@ -42,8 +44,7 @@ section{
 					font-weight: 300;	
 					line-height: 18px;
 					text-align: left;
-					margin-left: 50px;
-					margin-bottom: 20px;
+					margin: 0 0 20px 50px;
 				}
 
 				.login-input{
@@ -51,17 +52,17 @@ section{
 					background-color: $white;
 					border-width: 0;
 					font-size: 24px;
-					color: #757779;
 					border-bottom: 1px solid #757779;
 					line-height: 50px;
 					margin-bottom: 15px;
 					width: 70%;
-					margin-left: 50px;
 				}
+
+			.check-div{
+				text-align: left;
 
 				.login-label{
 					width: 129px;	
-					color: #757779;	
 					font-family: Muli-Light;	
 					font-size: 14px;	
 					font-weight: 300;	
@@ -74,33 +75,28 @@ section{
 						box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 					}
 				}
+			}
 
 				.login-submit{
-					font-family: Muli-ExtraLight;
+					margin: 30px auto 20px auto;
 					width: 50%;	
 					border-radius: 100px;
-					background-color: #ADD44C;
+					background-color: $buttonBack;
 					color: $white;
 					padding: 8px;
-					margin-bottom: 20px;
 					border: none;
-					margin-left: auto;
-					margin-right: auto;
-					margin-top: 30px;
 					display: block;
 				}
 
 				.login-link{
+					margin: 0 auto 15px auto;
 					font-family: Muli-Light;
-					margin-left: auto;
-					margin-right: auto;
 					display: block;
 					text-align: center;
-					color: #757779;
 					font-size: 14px;	
 					font-weight: 300;	
 					line-height: 18px;
-					margin-bottom: 15px;
+					color: $textGray;
 				}
 			}
 		}

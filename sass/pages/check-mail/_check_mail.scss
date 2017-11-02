@@ -1,16 +1,13 @@
-.check-body{
-	background-color: $bodyGray;
-
-	.check-section{
+.check-section{
 		background-color: $bodyGray;
     	text-align: center;
     	width: 100%;
+    	///with this padding, I centered the div vertically
     	padding: 100px 0;
 
 		.check-div{
 			width: 30%;
-			margin-left: auto;
-			margin-right: auto;
+			margin: 0 auto;
 			display: block;
 			background-color: $white;
 				
@@ -20,10 +17,11 @@
 				-webkit-box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
 				-moz-box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
 				box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
+				font-family: Muli-Light;
+				color: $textGray;
+				font-size: 15px;
 
 				.check-h1{
-					color: $textGray;
-					font-family: Muli-Light;
 					font-size: 20px;
 					font-weight: 300;
 					line-height: 27px;
@@ -31,24 +29,18 @@
 				}
 					
 				.check-p{
-					color: $textGray;
-					font-family: Muli-Light;
-					font-size: 15px;
-					font-weight: 300;
+					font-weight: 300;					
+					///pading 20px is for top and bottom and the 50px for right and left
 					padding: 20px 50px;
 					text-align: left;
 				}
 					
-				.check-p1{
+				.check-link{
 					color: $textGray;
-					font-family: Muli-Light;
-					font-size: 15px;
 					font-weight: 300;
-					margin-bottom: 50px;
-					margin-top: 50px;
+					margin: 30px 0 50px;
 					display: block;
 				}
 			}			
 		}
 	}
-}
