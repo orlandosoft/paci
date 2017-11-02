@@ -3,10 +3,16 @@
     	text-align: center;
     	width: 100%;
     	///with this padding, I centered the div vertically
-    	padding: 100px 0;
+    	padding: 100px 15px;
+
+    	@include small{
+    	  padding: 15px;
+    	}
+
 
 		.check-div{
-			width: 30%;
+			max-width: 360px;
+			width: 100%;
 			margin: 0 auto;
 			display: block;
 			background-color: $white;
@@ -33,6 +39,10 @@
 					///pading 20px is for top and bottom and the 50px for right and left
 					padding: 20px 50px;
 					text-align: left;
+
+					@include small{
+						padding: 10px;
+					}
 				}
 					
 				.check-link{
