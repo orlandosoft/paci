@@ -1099,49 +1099,44 @@ a {
 .check-body {
   background-color: #F7F7F7; }
   .check-body .check-section {
-    background-color: #FFFFFF;
-    text-align: center; }
+    background-color: #F7F7F7;
+    text-align: center;
+    width: 100%;
+    padding: 100px 0; }
     .check-body .check-section .check-div {
       width: 30%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
       background-color: #FFFFFF; }
-      .check-body .check-section .check-div .check-form .check-field {
+      .check-body .check-section .check-div .check-field {
         border-radius: 7.5px;
         border: none;
         -webkit-box-shadow: 0px 0px 10px 2px rgba(184, 175, 184, 0.51);
         -moz-box-shadow: 0px 0px 10px 2px rgba(184, 175, 184, 0.51);
         box-shadow: 0px 0px 10px 2px rgba(184, 175, 184, 0.51); }
-        .check-body .check-section .check-div .check-form .check-field .check-h1 {
-          height: 5.14%;
+        .check-body .check-section .check-div .check-field .check-h1 {
           color: #757779;
           font-family: Muli-Light;
           font-size: 20px;
           font-weight: 300;
           line-height: 27px;
-          margin-bottom: 50px;
           margin-top: 50px; }
-        .check-body .check-section .check-div .check-form .check-field .check-p {
-          height: 5.14%;
+        .check-body .check-section .check-div .check-field .check-p {
+          color: #757779;
+          font-family: Muli-Light;
+          font-size: 15px;
+          font-weight: 300;
+          padding: 20px 50px;
+          text-align: left; }
+        .check-body .check-section .check-div .check-field .check-p1 {
           color: #757779;
           font-family: Muli-Light;
           font-size: 15px;
           font-weight: 300;
           margin-bottom: 50px;
-          margin-top: 50px; }
-        .check-body .check-section .check-div .check-form .check-field .check-p1 {
-          height: 5.14%;
-          color: #757779;
-          font-family: Muli-Light;
-          font-size: 15px;
-          font-weight: 300;
-          margin-bottom: 50px;
-          margin-top: 50px; }
+          margin-top: 50px;
+          display: block; }
 
 body {
   background-color: #EFEFEF; }
