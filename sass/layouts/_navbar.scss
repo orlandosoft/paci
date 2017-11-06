@@ -6,12 +6,12 @@
   height: 100vh !important;
     
   .blog-centered-text{
-    color: $white;	
+    color: $white;  
     font-family: Muli-ExtraLight;
     font-size: 4em;
-    font-weight: 300;	
-    letter-spacing: 1px;	
-    line-height: 80px;	
+    font-weight: 300;   
+    letter-spacing: 1px;    
+    line-height: 80px;  
     text-align: -webkit-center;
   
     @include center(true,true);
@@ -55,7 +55,6 @@
         .menuToggle {
           display: none;
         }      
-
         @include medium {
           .menuToggle {
             display: block;
@@ -65,7 +64,10 @@
             z-index: 6;
             -webkit-user-select: none;
             user-select: none;
-
+            
+            @include small{
+              top: 10px;
+            }
            .burger {
              display: block;
              width: 40px;
@@ -78,48 +80,44 @@
              z-index: 2;
              -webkit-touch-callout: none;
            }   
-
            :checked ~ span {
              opacity: 1;
              transform: rotate(45deg) translate(-2px, -1px);
              background: #232323;
            } 
-
            :checked ~ span:nth-last-child(3) {
              opacity: 0;
              transform: rotate(0deg) scale(0.2, 0.2);
            } 
-
            :checked ~ span:nth-last-child(2) {
              opacity: 1;
              transform: rotate(-45deg) translate(0, -1px);
            }
-
            :checked ~ ul {
              right: 0px;
            }
-
            .burger-span {
              display: block;
              width: 33px;
              height: 4px;
              margin-bottom: 5px;
              position: relative;
-             background: #ADD44C;
+             background: $lightGreen;
              border-radius: 3px;
              z-index: 1;
              transform-origin: 4px 0px;
              transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;   
+              
+             &.burguer-alt{
+               background: $white;
+             }
            }    
-
            :first-child {
              transform-origin: 0% 0%;
            }    
-
            :nth-last-child(2) {
              transform-origin: 0% 100%;
            }
-
            .menu {
              position: fixed;
              width: 250px;
@@ -131,12 +129,10 @@
              transition: right 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
              background-color: #ADD44C;
              margin-top: 0;
-
              .collapsed-item{
                text-align: left;
                margin: 5% -5%; 
                color: $white;
-
                .item {
                  font-size: 2em;
                  font-family: 'Raleway-Regular';
@@ -168,8 +164,8 @@
         .gray-list{
           display: inline-block;
           color: $white ;
-          font-family: Muli-ExtraLight;	
-          font-size: 13px;	
+          font-family: Muli-ExtraLight; 
+          font-size: 13px;  
           line-height: 16px;
           text-align: right;
           margin-right: 3em;
