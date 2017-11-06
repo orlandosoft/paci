@@ -86,6 +86,11 @@
 					padding: 8px;
 					border: none;
 					display: block;
+
+					&:hover{
+						background-color: $footerLink;
+						cursor: pointer;
+					}
 				}
 
 				.login-link{

@@ -55,6 +55,11 @@
 				border: none;
 				margin: 30px auto 50px auto;
 				display: block;
+
+				&:hover{
+					background-color: $footerLink;
+					cursor: pointer;
+				}
 			}
 
 			.new-p{

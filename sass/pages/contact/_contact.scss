@@ -3,7 +3,7 @@
     text-align: center;
     width: 100%;
     ///with this padding, I centered the div vertically
-    padding: 5px 0;
+    padding: 100px 15px;
 
 
 	.contact-div{
@@ -67,6 +67,11 @@
 				padding: 8px;
 				border: none;
 				display: block;
+
+				&:hover{
+					background-color: $footerLink;
+					cursor: pointer;
+				}
 			}
 
 			.contact-p1{		
