@@ -1,0 +1,56 @@
+.check-section{
+		background-color: $bodyGray;
+    	text-align: center;
+    	width: 100%;
+    	///with this padding, I centered the div vertically
+    	padding: 100px 15px;
+
+    	@include small{
+    	  padding: 15px;
+    	}
+
+
+		.check-div{
+			max-width: 360px;
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+			background-color: $white;
+				
+			.check-field{
+				border-radius: 7.5px;
+				border: none;
+				-webkit-box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
+				-moz-box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
+				box-shadow: 0px 0px 10px 2px rgba(184,175,184,0.51);
+				font-family: Muli-Light;
+				color: $textGray;
+				font-size: 15px;
+
+				.check-h1{
+					font-size: 20px;
+					font-weight: 300;
+					line-height: 27px;
+					margin-top: 50px;
+				}
+					
+				.check-p{
+					font-weight: 300;					
+					///pading 20px is for top and bottom and the 50px for right and left
+					padding: 20px 50px;
+					text-align: left;
+
+					@include small{
+						padding: 10px;
+					}
+				}
+					
+				.check-link{
+					color: $textGray;
+					font-weight: 300;
+					margin: 30px 0 50px;
+					display: block;
+				}
+			}			
+		}
+	}
