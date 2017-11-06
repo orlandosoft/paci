@@ -1,21 +1,17 @@
 .register-section{
-  height: 120vh;
-  
-    @include small{
-      height: 130vh;
-    }
+  padding-top: 15%;
   
     .register-wrapper{
-      @include center(true,true);
-      
       color: $footerLink;
+      display: block;
       font-size: 1em;
       font-weight: 600;
       font-family: Muli-ExtraLight;
       line-height: 13px;
-      top: 70%;
       max-width: 39.7em;
-        
+      margin: auto;
+      top: 70%;
+       
         @include small{
           top: 75%;
         }
