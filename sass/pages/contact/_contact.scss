@@ -1,0 +1,88 @@
+.contact-section{
+	background-color: $bodyGray;
+    text-align: center;
+    width: 100%;
+    ///with this padding, I centered the div vertically
+    padding: 100px 15px;
+
+
+	.contact-div{
+		margin: 0 auto;
+		display: block;
+		width: 30%;
+
+		.contact-form{
+			background-color: $bodyGray;
+			color: $textGray;
+			font-family: Muli-Light;
+
+
+			.contact-h1{
+				margin: 0 auto auto auto;
+				text-align: center;		
+				font-size: 36px;	
+				font-weight: 300;	
+				line-height: 45px;
+				display: block;
+			}
+
+			.contact-p{		
+				margin: auto auto 40px auto;
+				font-size: 14px;	
+				font-weight: 300;	
+				line-height: 18px;	
+				text-align: center;
+				display: block;
+				padding: 0 10px;
+			}
+
+			.contact-input{
+				color: $textGray;
+				font-family: Muli-ExtraLight;
+				background-color: $bodyGray;
+				border-width: 0;
+				font-size: 24px;
+				border-bottom: 1px solid #757779;
+				line-height: 50px;
+				margin-bottom: 15px;
+				width: 60vh;
+			}	
+
+			.contact-textarea{
+				font-family: Muli-Light;
+				margin-top: 20px;
+				background-color: $bodyGray;
+				border: 1px solid #979797;	
+				border-radius: 4px;
+				color: $textGray;
+			}
+
+			.contact-button{
+				margin: 30px auto 20px auto;
+				font-family: Muli-ExtraLight;
+				width: 50%;	
+				border-radius: 100px;
+				background-color: $buttonBack;
+				color: $white;
+				padding: 8px;
+				border: none;
+				display: block;
+
+				&:hover{
+					background-color: $footerLink;
+					cursor: pointer;
+				}
+			}
+
+			.contact-p1{		
+				margin: auto auto 40px auto;
+				font-size: 12px;	
+				font-weight: 300;	
+				line-height: 18px;	
+				text-align: center;
+				display: block;
+
+			}
+		}
+	}
+}
