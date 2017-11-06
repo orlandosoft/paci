@@ -1,0 +1,119 @@
+.register-section{
+  height: 120vh;
+  
+    @include small{
+      height: 130vh;
+    }
+  
+    .register-wrapper{
+      @include center(true,true);
+      
+      color: $footerLink;
+      font-size: 1em;
+      font-weight: 600;
+      font-family: Muli-ExtraLight;
+      line-height: 13px;
+      top: 70%;
+      max-width: 39.7em;
+        
+        @include small{
+          top: 75%;
+        }
+
+        .title-top{
+          color: $footerLink;
+          font-family: Muli-ExtraLight;
+          font-size: 2.8em;
+          font-weight: 200;
+          line-height: 35px;
+          text-align: center;
+          padding-bottom: 20%;
+
+        }
+
+        .col-full{
+          width: 100%;
+        }
+
+        .col-2-register{
+          width: 45%;
+          display: inline-grid;
+            
+          @include small{
+            width: 100%;
+          }
+        }
+        
+        .col-2-content{
+          width: 100%;
+        
+        }
+
+        .right-div{
+          float: right;
+          
+          @include small{
+            float: none;
+          }
+        }
+
+        input{
+          border: none !important;
+          height: 3em !important;  
+          border-bottom: 1px solid #757779!important;
+          margin: 20 0 20 0;
+        }
+        
+        select{
+          border: none !important;
+          border-bottom: 1px solid #757779!important;  
+          background-color: $white;  
+          color: $footerLink; 
+          font-family: Muli-ExtraLight;
+          font-size: 2.2em;
+          font-weight: 200;
+          line-height: 28px;
+          margin: 20 0 20 0;
+        }
+
+        ::placeholder{    
+          color: $footerLink;
+          font-family: Muli-ExtraLight;
+          font-size: 2.2em;
+          font-weight: 200;
+          line-height: 28px;
+        }
+      
+        .register-button{     
+          color: $white;
+          border: none;
+          border-radius: 100px;
+          background-color: $lightGreen;
+          font-family: Muli-ExtraLight;
+          font-size: 1.3em;
+          height: 38px;
+          line-height: 16px;
+          margin-top: 1.5em;
+          text-align: center;
+          width: 180px;
+        }
+      
+        .button-container{
+          text-align: center;
+          width: 100%;  
+        }
+      
+        .select-style select {
+          padding: 5px 8px;
+          width: 10%;
+          border: none;
+          box-shadow: none;
+          background-color: blue;
+          background-image: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+
+    }
+}
