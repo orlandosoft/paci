@@ -5,30 +5,50 @@
     ///with this padding, I centered the div vertically
     padding: 5px 0;
 	
+	@include small{
+		width: 100%;
+	}
+
 	.new-div{
 	background-color: $bodyGray;
 
+	@include small{
+		width: 100%;
+	}
 		.new-form{ 
 			width: 30%;
 			margin: 0 auto;
 			color: $textGray;
 			text-align: center;
 			font-family: Muli-ExtraLight;
+
+		@include small{
+			width: 100%;
+			padding: 50px 5px;
+		}
 		
 			.new-h2{
-				font-size: 14px;
+				font-size: 1.4em;
 				font-weight: 300;
 				line-height: 27px;
 				margin: 50px 0 0;
+
+			@include small{
+				width: 100%;
+				}
 			}
 
 			.new-h1{
 				font-family: Muli-Light !important;
-				font-size: 28px;
+				font-size: 2.8em;
 				font-weight: 300;
 				line-height: 35px;
 				margin-bottom: 50px;
 				margin: 0;
+
+			@include small{
+				width: 100%;
+				}
 			}
 
 			.new-inputs{ 	
@@ -39,7 +59,7 @@
 					background-color: $bodyGray;
 					font-family: Muli-ExtraLight;
 					border-width: 0;
-					font-size: 24px;
+					font-size: 2.4em;
 					border-bottom: 1px solid #757779;
 					line-height: 50px;
 					margin-bottom: 15px;
@@ -60,13 +80,17 @@
 					background-color: $footerLink;
 					cursor: pointer;
 				}
+
+				@include small{
+					width: 50%;
+				}
 			}
 
 			.new-p{
 				margin: 50px auto 30px auto; 
 				max-width: 960px;	
 				font-family: Muli;	
-				font-size: 10px;	
+				font-size: 1.0 em;	
 				font-weight: 200;	
 				line-height: 13px;	
 			}	
