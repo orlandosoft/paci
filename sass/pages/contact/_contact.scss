@@ -5,11 +5,21 @@
     ///with this padding, I centered the div vertically
     padding: 100px 15px;
 
+    @include small{
+    	width: 100%;
+    	padding: 30px 5px;
+    }
 
 	.contact-div{
 		margin: 0 auto;
 		display: block;
 		width: 30%;
+
+		@include small{
+		    width: 80%;
+    		padding: 5px;
+    		margin: 10px;
+		}
 
 		.contact-form{
 			background-color: $bodyGray;
@@ -24,6 +34,11 @@
 				font-weight: 300;	
 				line-height: 45px;
 				display: block;
+				width: 100%;
+
+				@include small{
+					padding: 5px;
+				}
 			}
 
 			.contact-p{		
@@ -45,7 +60,11 @@
 				border-bottom: 1px solid #757779;
 				line-height: 50px;
 				margin-bottom: 15px;
-				width: 60vh;
+				width: 100%;
+
+				@include small{
+					max-width: 360px;
+				}
 			}	
 
 			.contact-textarea{
@@ -55,6 +74,7 @@
 				border: 1px solid #979797;	
 				border-radius: 4px;
 				color: $textGray;
+				width: 100%;
 			}
 
 			.contact-button{
