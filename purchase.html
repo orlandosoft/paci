@@ -5,10 +5,12 @@
   <title>Paci</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+  <!-- Remember to include jQuery :) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
 
@@ -16,9 +18,9 @@
 <nav class="navbar navbar-alt" id="menu">   
        <div class="menuToggle">
           <input class="burger" type="checkbox" />
-          <span class="burger-span"></span>
-          <span class="burger-span"></span>
-          <span class="burger-span"></span>
+          <span class="burger-span burguer-alt"></span>
+          <span class="burger-span burguer-alt"></span>
+          <span class="burger-span burguer-alt"></span>
           <ul class="menu">
             <li class="collapsed-item">
               <a href="#" class="item"><a href="paci-english.html">EN</a> / <a href="paci.html">ES</a></a>
@@ -56,61 +58,77 @@
   </nav>
 </section>
   
-<section class="register-section">
-  <div class="register-wrapper">
-    <div class="title-top">Agrega los siguientes datos para continuar con tu registro</div>
-    <div class="col-full">
-      <div>NOMBRE DE LA EMPRESA</div>
-      <input type="text" placeholder="Nombre de tu empresa" class="col-full">
+<form class="purchase-section">
+  <div class="purchase-wrapper">
+    <div class="title-top">Resumen de Compra</div>
+    <div class="col-full col-full-borders">
+      <div class="col-2-plan">
+        <select class="col-2-content plan">
+          <option value="plan">Tipo de plan</option>
+          <option value="saab">Básico</option>
+          <option value="mercedes">Medio</option>
+          <option value="audi">Premium</option>
+        </select>
+      </div>
+       <div class="col-right-price align-right">
+        <div class="symbol">$</div>
+        <div class="price-number">10</div>
+        <div class="coin">/mn</div>
+      </div>
+      <div class="col-2-plan font-medium">Ahorra $10 al año</div>     
     </div>
-    <div class="col-2-register">
-      <div class="col-2-register">TELÉFONO</div>
-      <input type="text" placeholder="Teléfono" class="col-2-content">
+    <div class="col-full col-top-separate">
+      <div>NOMBRE EN LA TARJETA</div>
+      <input type="text" placeholder="Nombre completo">
     </div>
-    <div class="col2-register right-div">
-      <div class="col-2-register">AGREGA TU CFI</div>
-      <input type="text" placeholder="Agrega tu CIF" class="col-2-content">
+     <div class="col-full">
+      <div>NUMERO DE TARJETA</div>
+      <input type="text" placeholder="0000 0000 0000 0000">
     </div>
-    <div class="col-full">
-      <div class="col-2-register">DIRECCION DEL USUARIO</div>
-      <input type="text" placeholder="Dirección del Usuario" class="col-full">
-    </div>
-    <div class="col-2-register">
-      <div class="col-2-register">PAÍS</div>
-      <select class="col-2-content">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-      </select>
-    </div>
-    <div class="col-2-register right-div">
-      <div class="col-2-register">ESTADO</div>
-      <select class="col-2-content">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-      </select>
-    </div>
-    <div class="col-2-register">
-      <div class="col-2-register">CIUDAD</div>
-      <select class="col-2-content">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-      </select>
-    </div>
-    <div class="col-2-register right-div">
-      <div class="col-2-register">CP</div>
-      <input type="text" placeholder="CP" class="col-2-content">
-    </div>
-    <div class="button-container"><a><button class="register-button">REGISTRARSE</button></a></div>
    
+    <div class="col-3-plan">
+      <div>FECHA DE EXPIRACIÓN</div> 
+      <input type="text" placeholder="MM">
+    </div>
+    <div class="col-3-plan div-margin">
+      <input type="text" placeholder="AA">
+    </div>
+    
+    <div class="col-3-plan right-div-small">
+       <div class="col-3-plan">CVC</div>
+      <input type="text" placeholder="000" class="input-alt">
+    </div>
+     <div class="col-2-checkbox">
+      <div class="col-2-checkbox">PAÍS</div>
+      <select class="col-2-content">
+        <option value="españa">España</option>
+        <option value="mexico">México</option>
+      </select>
+    </div>
+     <div class="col-3-plan right-div-small">
+      <div class="col-3-plan">ZIP</div>
+      <input type="text" placeholder="0000" class="input-alt">
+    </div>
+    <div class="col-full col-full-borders col-top-separate">
+      <div class="plan-content">Total a pagar</div>
+      <div class="col-3-plan align-right plan-content">$10</div>
+    </div>
+    <div class="button-container"><a href="#ex1" rel="modal:open"><button class="register-button" class="hire-plan" >CONTRATAR PLAN</button></a></div>
+    <div class="bottom-box">
+      <label>Secure Credit Card Payment</label>
+      <label>This is a secure 128-bit SSL encrypted payment</label>
+    </div>
   </div>
-</section>
-
+   <!-- Modal HTML embedded directly into document -->
+  <div id="ex1" class="modal modal-custom">
+    <div class="modal-wrapper">
+      <div class="img-successful"></div>
+      <div class="successful-pay">¡El pago se ha realizado con éxito!</div>
+      <a><button class="modal-button">ir al Dashboard</button></a>
+    </div>
+  </div>
+</form>
+ 
   <footer class="footer footer-margin">
     <div class="footer-info">
       <a href="#"><img src="assets/images/Paci-logo.svg" class="footer-logo"></a>
@@ -148,8 +166,5 @@
       </div>
     </div>
   </footer> 
-  <script src="assets/javascripts/jquery.waypoints.min.js"></script>
-  <script src="assets/javascripts/waypoints.js"></script>
-  <script src="assets/javascripts/inview.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,273 @@
+.purchase-section{
+  padding-top: 14%;
+  
+    .purchase-wrapper{
+      color: $footerLink;
+      display: block;
+      font-size: 1em;
+      font-weight: 600;
+      font-family: Muli-ExtraLight;
+      line-height: 13px;
+      top: 70%;
+      margin: auto;  
+      max-width: 38em;
+      width: 100%;
+        
+        @include small{
+          top: 75%;
+        }
+      
+        &.font-medium{
+          font-size: 1.8em;
+        }
+
+        .title-top{
+          color: $footerLink;
+          font-family: Muli-ExtraLight;
+          font-size: 2.8em;
+          font-weight: 200;
+          line-height: 35px;
+          text-align: center;
+          padding-bottom: 6%;
+        }
+
+        .col-full{
+          margin-top: 2em;
+          width: 100%;
+          
+            &.col-full-borders{
+              border-bottom: 1px solid $footerLink!important;
+              border-top: 1px solid $footerLink!important;
+              padding: 20 0 20;
+            }
+          &.col-top-separate{
+            margin-top: 4em;
+          }       
+        }
+
+        .col-2-plan{
+          width: 50%;
+          display: inline-grid;
+            
+          @include small{
+            width: 70%;
+          }
+        }
+        
+        .col-2-content{
+          width: 100%;
+        }
+      
+        .col-2-checkbox{
+          width: 70%;
+          display: inline-block;
+          margin-top: .8em;
+        }
+        
+        .col-3-plan{
+          display: inline-block;
+          width: 30%;
+          
+          &.right-div-small{
+            width: 25%;
+            float: right;
+          }
+           &.align-right{
+            width: 25%;
+            float: right;
+            text-align: right;
+          }
+          
+          &.div-margin{
+            margin-left: 5%;
+          }
+          
+          ::placeholder{
+             color: $ashes;
+          }
+        }
+        
+        .col-right-price{
+          float: right;
+          
+            
+            .price-number{
+              color: $footerLink;
+              display: inline-block;
+              font-family: Muli-ExtraLight;
+              font-size: 4.4em;
+              font-weight: 200;
+              line-height: 55px;
+            }
+            
+            .symbol{
+              display: inline-block;
+              font-size: 1.8em;
+              line-height: 2.5em;
+              vertical-align: top;
+            }
+            
+            .coin{
+              display: inline-block;  
+              font-size: 2em;
+            }
+        }
+        
+        .plan-content{
+          display: inline;
+          color: $footerLink;
+          font-family: Muli-ExtraLight;
+          font-size: 22px;
+          font-weight: 300;
+          line-height: 28px;
+        }
+        .font-medium{
+          font-size: 1.4em !important;
+        }
+
+        .right-div{
+          float: right;
+          
+          @include small{
+            float: none;
+          }
+        }
+
+        input{
+          border: none !important;
+          height: 3em !important;  
+          border-bottom: 1px solid #757779!important;
+          margin: 20 0 20 0;
+          width: 100%;
+        }
+        
+        select{
+          border: none !important;
+          border-bottom: 1px solid #757779!important;  
+          background-color: $white;  
+          color: $footerLink; 
+          font-family: Muli-ExtraLight;
+          font-size: 2.4em;
+          font-weight: 300;
+          line-height: 30px;
+          margin-left: -.5em;
+        }
+        
+        .plan{
+          border: none !important;
+        }
+      
+      
+
+        ::placeholder{    
+          color: $footerLink;
+          font-family: Muli-ExtraLight;
+          font-size: 2.2em;
+          font-weight: 200;
+          line-height: 28px;
+          left: 0;
+        }
+      
+        .register-button{     
+          color: $white;
+          border: none;
+          border-radius: 100px;
+          background-color: $lightGreen;
+          font-family: Muli-ExtraLight;
+          font-size: 1.3em;
+          height: 38px;
+          line-height: 16px;
+          margin-top: 1.5em;
+          text-align: center;
+          width: 180px;
+          
+          &:hover{
+            background-color: $ashes;
+            cursor: pointer;
+          }
+        }
+      
+        .button-container{
+          margin-top: 3em;
+          text-align: center;
+          width: 100%;  
+        }
+      
+        .select-style select {
+          padding: 5px 8px;
+          width: 10%;
+          border: none;
+          box-shadow: none;
+          background-color: blue;
+          background-image: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+      
+        .bottom-box{
+          text-align: center;
+          max-width: 258px;
+          margin: auto;
+          margin-top: 10%;
+        }
+    }
+}
+.modal a.close-modal {
+  display: none !important;
+}
+
+.modal-custom{
+  border-radius: 8px !important;
+  background-color: #FFFFFF !important;	
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1) !important;
+  height: 100% !important; 
+  max-width: 600px !important;
+  max-height: 600px !important;
+  text-align: center !important;
+  top: 20% !important;
+  width: 100% !important;
+      
+    .img-successful{
+      background-image: url("../../../assets/images/pagoRealizado.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      height: 100% ; 
+      margin-top: 15%;
+      max-width: 215px;
+      max-height: 215px;
+      width: 100%;
+    }
+
+    .successful-pay{
+      color: $footerLink;
+      display: inline-block;
+      font-family: Muli-ExtraLight;
+      font-size: 4.4em;
+      font-weight: 200;
+      line-height: 57px;
+      text-align: center;
+      max-width: 456px;
+    }
+
+    .modal-button{
+      color: $white;
+      border: none;
+      border-radius: 100px;
+      background-color: $lightGreen;
+      font-family: Muli-ExtraLight;
+      font-size: 1.3em;
+      height: 38px;
+      line-height: 16px;
+      margin-top: 3em;
+      text-align: center;
+      width: 180px;
+
+        &:hover{
+          background-color: $ashes;
+          cursor: pointer;
+        }
+    }
+
+  }
