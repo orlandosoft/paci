@@ -5,13 +5,29 @@
     	///with this padding, I centered the div vertically
     	padding: 150px 0;
 		
+		@include small{
+		width: 100%;
+		padding: 50px 5px;
+		}
+
 		.restart-div{
-			width: 25%;
+			width: 100%;
+			max-width: 360px;
 			margin: 0 auto;
 			display: block;
 			background-color: $white;
+
+		@include small{
+			width: 90%;
+    		padding: 5px;
+    		margin: 10px;
+		}
 			
 			.restart-form{
+
+				@include small{
+					width: 100%;
+				}
 
 				.restart-field{
 					border-radius: 7.5px;
@@ -24,7 +40,7 @@
 					.restart-h1{
 						color: $textGray;
 						font-family: Muli-Light !important;
-						font-size: 20px;
+						font-size: 2.0em;
 						font-weight: 300;
 						line-height: 27px;
 						margin: 50px 0;
@@ -34,7 +50,7 @@
 					.restart-text{
 						background-color: $white;
 						border-width: 0;
-						font-size: 20px;
+						font-size: 2.0em;
 						color: $textGray;
 						border-bottom: 1px solid #757779;
 						line-height: 50px;

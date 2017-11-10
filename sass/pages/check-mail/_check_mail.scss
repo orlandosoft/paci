@@ -6,7 +6,8 @@
     	padding: 100px 15px;
 
     	@include small{
-    	  padding: 15px;
+    	  padding: 50px 15px;
+
     	}
 
 
@@ -16,6 +17,10 @@
 			margin: 0 auto;
 			display: block;
 			background-color: $white;
+
+			@include small{
+				width: 100%;
+			}
 				
 			.check-field{
 				border-radius: 7.5px;
@@ -27,8 +32,12 @@
 				color: $textGray;
 				font-size: 15px;
 
+				@include small{
+					padding: 5px;
+				}
+
 				.check-h1{
-					font-size: 20px;
+					font-size: 2.0em;
 					font-weight: 300;
 					line-height: 27px;
 					margin-top: 50px;
@@ -36,7 +45,7 @@
 					
 				.check-p{
 					font-weight: 300;					
-					///pading 20px is for top and bottom and the 50px for right and left
+					///padding 20px is for top and bottom and the 50px for right and left
 					padding: 20px 50px;
 					text-align: left;
 

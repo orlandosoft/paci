@@ -7,12 +7,26 @@
     ///with this padding, I centered the div vertically
     padding: 150px 0;
 
+    @include small{
+    	width: 100%;
+    	padding: 50px 10px;
+    }
+
 	.login-div{
-		width: 25%;
+		width: 100%;
+		max-width: 360px;
 		margin: 0 auto;
 		display: block;
 		background-color: $white;
-		
+
+		@include small{
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 50px;
+
+			
+		}
+		 
 		.login-form{
 			
 			.login-field{
@@ -29,7 +43,7 @@
 					margin-right: auto;
 					margin-left: auto;
 					display: block;		
-					font-size: 32px;	
+					font-size: 3.2em;	
 					font-weight: 200;	
 					line-height: 40px;
 					text-align: left;
@@ -40,7 +54,7 @@
 				.login-p{
 					color: #B4B6B8;	
 					font-family: Muli-Light;	
-					font-size: 14px;	
+					font-size: 1.4em;	
 					font-weight: 300;	
 					line-height: 18px;
 					text-align: left;
@@ -51,7 +65,7 @@
 					font-family: Muli-ExtraLight;
 					background-color: $white;
 					border-width: 0;
-					font-size: 24px;
+					font-size: 2.4em;
 					border-bottom: 1px solid #757779;
 					line-height: 50px;
 					margin-bottom: 15px;
@@ -64,7 +78,7 @@
 				.login-label{
 					width: 129px;	
 					font-family: Muli-Light;	
-					font-size: 14px;	
+					font-size: 1.4em;	
 					font-weight: 300;	
 					line-height: 18px;
 
@@ -98,7 +112,7 @@
 					font-family: Muli-Light;
 					display: block;
 					text-align: center;
-					font-size: 14px;	
+					font-size: 1.4em;	
 					font-weight: 300;	
 					line-height: 18px;
 					color: $textGray;
