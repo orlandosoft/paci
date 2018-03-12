@@ -498,32 +498,26 @@ a {
         .social-footer .footer-floor .footer-policy {
           position: static; } }
 
-.divided-left, .divided-right {
+.divided-solutions .divided-left, .divided-solutions .divided-right {
   height: 120%; }
-
-.left-image {
+.divided-solutions .left-image {
   padding-left: 0 !important; }
-
-.right-image {
+.divided-solutions .right-image {
   padding-right: 0 !important; }
-
-.turquoise-section {
+.divided-solutions .turquoise-section {
   background-color: #008D95; }
-  .turquoise-section .text-white {
+  .divided-solutions .turquoise-section .text-white {
     color: #FFFFFF; }
-
-.divided-side-big {
+.divided-solutions .divided-side-big {
   width: 60% !important; }
-
-.divided-side-small {
+.divided-solutions .divided-side-small {
   width: 40% !important; }
-
-.divided-side {
+.divided-solutions .divided-side {
   float: left;
   font-family: Muli-Light;
   height: 100%;
   position: relative; }
-  .divided-side .divided-image {
+  .divided-solutions .divided-side .divided-image {
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -535,9 +529,9 @@ a {
     max-height: 100vh;
     padding-top: 75%;
     width: 80%; }
-  .divided-side .first-image {
+  .divided-solutions .divided-side .first-image {
     background-image: url("../assets/images/sistemaweb.png"); }
-  .divided-side .second-image {
+  .divided-solutions .divided-side .second-image {
     background-image: url("../assets/images/graficoPotencial.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -548,11 +542,11 @@ a {
     max-height: 100vh;
     padding-top: 75%;
     width: 60%; }
-  .divided-side .js-second-image-animate-down {
+  .divided-solutions .divided-side .js-second-image-animate-down {
     width: 70%; }
-  .divided-side .js-second-image-animate-up {
+  .divided-solutions .divided-side .js-second-image-animate-up {
     width: 60%; }
-  .divided-side .third-image {
+  .divided-solutions .divided-side .third-image {
     position: absolute;
     background-image: url("../assets/images/graficoApp.png");
     background-size: contain;
@@ -563,19 +557,19 @@ a {
     height: 90%;
     width: 70%;
     margin-left: 10%; }
-  .divided-side .fourth-image {
+  .divided-solutions .divided-side .fourth-image {
     background-image: url("../assets/images/grafico.png");
     right: 0;
     transition: all 200ms ease-in; }
-  .divided-side .js-fourth-image-animate-down {
+  .divided-solutions .divided-side .js-fourth-image-animate-down {
     top: 60%; }
-  .divided-side .js-fourth-image-animate-up {
+  .divided-solutions .divided-side .js-fourth-image-animate-up {
     top: 50%; }
-  .divided-side .right-text {
+  .divided-solutions .divided-side .right-text {
     padding-right: 10%; }
-  .divided-side .left-text {
+  .divided-solutions .divided-side .left-text {
     padding-left: 10%; }
-  .divided-side .divided-wrapper {
+  .divided-solutions .divided-side .divided-wrapper {
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -585,13 +579,13 @@ a {
     font-family: Muli-ExtraLight;
     color: #757779;
     width: 100%; }
-    .divided-side .divided-wrapper .divided-title {
+    .divided-solutions .divided-side .divided-wrapper .divided-title {
       font-size: 3.6em;
       max-width: 350px; }
-    .divided-side .divided-wrapper .divided-text {
+    .divided-solutions .divided-side .divided-wrapper .divided-text {
       font-size: 1.8em;
       margin-top: 1.5em; }
-    .divided-side .divided-wrapper .divided-button {
+    .divided-solutions .divided-side .divided-wrapper .divided-button {
       background-color: #008D95;
       border: none;
       border-radius: 100px;
@@ -600,10 +594,10 @@ a {
       margin-top: 2em;
       padding: 0.7em 3.6em;
       text-transform: uppercase; }
-      .divided-side .divided-wrapper .divided-button:hover {
+      .divided-solutions .divided-side .divided-wrapper .divided-button:hover {
         background-color: #B4B6B8;
         cursor: pointer; }
-    .divided-side .divided-wrapper .demo-button {
+    .divided-solutions .divided-side .divided-wrapper .demo-button {
       background-color: #FFFFFF;
       color: #757779; }
 
