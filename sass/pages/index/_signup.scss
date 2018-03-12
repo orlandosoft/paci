@@ -92,6 +92,11 @@
           margin-top: 1.5em;
           text-align: center;
           width: 180px;
+          
+          &:hover{
+            background-color: $ashes;
+            cursor: pointer;
+          }
         }
       
         .button-container{
