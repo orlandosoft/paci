@@ -31,6 +31,10 @@ angularRoutingApp.config(function($routeProvider) {
     .when('/newAccount', {
 			templateUrl	: 'view/new-account.html',
 			controller 	: 'newAccount.Controller'
+    })
+    .when('/purchase', {
+			templateUrl	: 'view/purchase.html',
+			controller 	: 'purchase.Controller'
 		})
 		.otherwise({
 			redirectTo: '/'
