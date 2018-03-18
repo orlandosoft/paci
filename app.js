@@ -8,10 +8,11 @@ var angularRoutingApp = angular.module('PaciApp', ['ngRoute']);
 angularRoutingApp.config(function($routeProvider) {
 
 	$routeProvider
-		.when('/', {
-			templateUrl	: 'view/paci.html',
-			controller 	: 'paci.Controller'
-    	})
+	.when('/', {
+			redirectTo: function(){
+				window.location = '/paci/paci.html';
+			}
+	})
     .when('/blog', {
 			templateUrl	: 'view/blog.html',
 			controller 	: 'blog.Controller'
@@ -36,8 +37,8 @@ angularRoutingApp.config(function($routeProvider) {
 			templateUrl	: 'view/purchase.html',
 			controller 	: 'purchase.Controller'
 		})
-		.otherwise({
-			redirectTo: '/'
+	.otherwise({
+			redirectTo : '/'
     });
     
 });

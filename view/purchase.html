@@ -16,6 +16,7 @@
   <script src="https://js.stripe.com/v3/"></script>
   <script src="js/index.js" data-rel-js></script>
   <link rel="stylesheet" href="css/form.css">
+  
 
 </head>
 <body>
@@ -75,20 +76,21 @@
               <div class="title-top">Resumen de Compra</div>
                 <div class="plan-container">
                   <div class="select-container">
-                    <select>
-                      <option value="plan">Tipo de plan</option>
-                      <option value="saab">Básico</option>
-                      <option value="mercedes">Medio</option>
-                      <option value="audi">Premium</option>
+                    <select ng-model="plan" ng-init="1">
+                      <option value="1" ng-selected='true' >Gratuito</option>
+                      <option value="2">Empresarial</option>
                     </select>
                   </div>
-                  <span class="price-amount">10 <span>/mn</span></span>
+                  <span class="price-amount" ng-if="plan == 1">0 <span>/mn</span></span>
+                  <span class="price-amount" ng-if="plan == 2">10 <span>/mn</span></span>
                   <span class="price-sign">$</span>
                   <br>
-                  <span class="plan-msg">Ahorra $10 al año</span>     
+                  <span class="plan-msg" ng-if="plan == 1">Periodo limitado</span>     
+                  <span class="plan-msg" ng-if="plan == 2">Periodo ilimitado</span>     
                 </div>
 
             </div>
+            <div ng-if="plan == 2">
             <div class="row">
               <div class="field sevenfive-width">
                 <input id="address" class="input empty" type="text" placeholder="185 Berry St" required="">
@@ -115,14 +117,14 @@
               
             </div>
           </div>
-          <div class="row">
+          <div class="row" ng-if="plan == 2">
             <div class="field">
               <div id="card-number" class="input empty"></div>
               <label for="card-number" >NÚMERO DE TARJETA</label>
               <div class="baseline"></div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" ng-if="plan == 2">
             <div class="field half-width">
               <div id="card-expiry" class="input empty"></div>
               <label for="card-expiry" >FECHA DE EXPIRACIÓN</label>
@@ -134,11 +136,12 @@
               <div class="baseline"></div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" ng-if="plan == 2">
             <div class="payment-resume-container">
                 <span class="payment-resume">Total a pagar</span>                
                 <span class="payment-amount">$10</span>
             </div>
+          </div>
           </div>
         <button type="submit">CONTRATAR PLAN</button>
           <div class="error" role="alert"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
