@@ -2,7 +2,7 @@
 
 
 // Creación del módulo
-var angularRoutingApp = angular.module('PaciApp', ['ngRoute']);
+var angularRoutingApp = angular.module('PaciApp', ['ngRoute', 'ngStorage']);
 
 // Configuración de las rutas
 angularRoutingApp.config(function($routeProvider) {
@@ -36,7 +36,11 @@ angularRoutingApp.config(function($routeProvider) {
     .when('/purchase', {
 			templateUrl	: 'view/purchase.html',
 			controller 	: 'purchase.Controller'
-		})
+	})
+	.when('/signup', {
+		templateUrl	: 'view/signup.html',
+		controller 	: 'signup.Controller'
+	})
 	.otherwise({
 			redirectTo : '/'
     });

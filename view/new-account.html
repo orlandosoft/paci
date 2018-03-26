@@ -45,18 +45,19 @@
 
   <section class="new-section">
     <div class="new-div">
-	  <form class="new-form">
+	  <form class="new-form" ng-click="saveData()">
       <br>
       <br>
       <br>
 	    <h2 class="new-h2">CREAR NUEVA CUENTA</h2>
-		<h1 class="new-h1">Agrega la siguiente</br>información</h1>
+    <h1 class="new-h1">Agrega la siguiente</br>información</h1>
 		<div class="new-inputs">
-		  <input class="new-item" type="text" name="name" placeholder="Nombre completo"><br>
-		  <input class="new-item" type="text" name="user" placeholder="Usuario"><br>
-		  <input class="new-item" type="mail" name="mail" placeholder="Mail"><br>
-		  <input class="new-item" type="password" name="password" placeholder="Contraseña"><br>
-		  <input class="new-item" type="password" name="confirm-password" placeholder="Confirmar contraseña">
+		  <input class="new-item" type="text" name="name" placeholder="Nombre completo" ng-model="vm.name" required><br>
+		  <input class="new-item" type="text" name="user" placeholder="Usuario" ng-model="vm.user" required><br>
+      <input class="new-item" type="mail" name="mail" placeholder="Mail" ng-model="vm.email" required autocomplete='email'><br>
+      <span ng-show="error != false " style="color:red"> Las contraseñas no coinciden</span>      
+		  <input class="new-item" type="password" name="password" placeholder="Contraseña" ng-model="vm.password" required><br>
+      <input class="new-item" type="password" name="confirm-password" placeholder="Confirmar contraseña" ng-model="vm.password2" required>
 		</div>
 		<br><input class="new-button" type="submit" name="continue" value="CONTINUAR">
 		<p class="new-p">Al registrarte, aceptas las Condiciones de Servicio y la Política de Privacidad, <br>incluyendo el Uso de Cookies. Otros podrán encontrarte por correo electrónico o<br>por número de teléfono cuando sea proporcionado.</p>

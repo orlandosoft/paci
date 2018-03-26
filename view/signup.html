@@ -1,16 +1,4 @@
-<html>
-<head>
-  <meta name="viewport" content="initial-scale=1">
-  <meta charset="UTF-8">
-  <title>Paci</title>
-  <link rel="stylesheet" type="text/css" href="../css/main.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-</head>
-<body>
+
 
 <section class="first-section navbar-section-alt">
 <nav class="navbar navbar-alt" id="menu">   
@@ -59,61 +47,62 @@
 <section class="register-section">
   <div class="register-wrapper">
     <div class="title-top">Agrega los siguientes datos para continuar con tu registro</div>
-    <div class="col-full">
-      <div>NOMBRE DE LA EMPRESA</div>
-      <input type="text" placeholder="Nombre de tu empresa" class="col-full">
-    </div>
-    <div class="col-2-register">
-      <div class="col-2-register">TELÉFONO</div>
-      <input type="text" placeholder="Teléfono" class="col-2-content">
-    </div>
-    <div class="col2-register right-div">
-      <div class="col-2-register">AGREGA TU CFI</div>
-      <input type="text" placeholder="Agrega tu CIF" class="col-2-content">
-    </div>
-    <div class="col-full">
-      <div class="col-2-register">DIRECCION DEL USUARIO</div>
-      <input type="text" placeholder="Dirección del Usuario" class="col-full">
-    </div>
-    <div class="col-2-register">
-      <div class="col-2-register">PAÍS</div>
-      <select class="col-2-content">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-      </select>
-    </div>
-    <div class="col-2-register right-div">
-      <div class="col-2-register">ESTADO</div>
-      <select class="col-2-content">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-      </select>
-    </div>
-    <div class="col-2-register">
-      <div class="col-2-register">CIUDAD</div>
-      <select class="col-2-content">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-      </select>
-    </div>
-    <div class="col-2-register right-div">
-      <div class="col-2-register">CP</div>
-      <input type="text" placeholder="CP" class="col-2-content">
-    </div>
-    <div class="button-container"><a><button class="register-button">REGISTRARSE</button></a></div>
-   
+    <form  ng-click="saveData()">
+      <div class="col-full">
+        <div>NOMBRE DE LA EMPRESA</div>
+        <input type="text" placeholder="Nombre de tu empresa" class="col-full" ng-model="vm.empresa" required/>
+      </div>
+      <div class="col-2-register">
+        <div class="col-2-register">TELÉFONO</div>
+        <input type="text" placeholder="Teléfono" class="col-2-content" ng-model="vm.telefono" required>
+      </div>
+      <div class="col2-register right-div">
+        <div class="col-2-register">AGREGA TU CIF</div>
+        <input type="text" placeholder="Agrega tu CIF" class="col-2-content" ng-model="vm.cif" required>
+      </div>
+      <div class="col-full">
+        <div class="col-2-register">DIRECCION DEL USUARIO</div>
+        <input type="text" placeholder="Dirección del Usuario" class="col-full" ng-model="vm.direccion" required>
+      </div>
+      <div class="col-2-register">
+        <div class="col-2-register">PAÍS</div>
+        <select class="col-2-content" ng-model="vm.pais" required>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+      <div class="col-2-register right-div">
+        <div class="col-2-register">ESTADO</div>
+        <select class="col-2-content" ng-model="vm.estado" required>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+      <div class="col-2-register">
+        <div class="col-2-register">CIUDAD</div>
+        <select class="col-2-content" ng-model="vm.ciudad" required>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+      <div class="col-2-register right-div">
+        <div class="col-2-register">CP</div>
+        <input type="text" placeholder="CP" class="col-2-content" ng-model="vm.cp" required/> 
+      </div>
+      <div class="button-container"><button class="register-button" type="submit">REGISTRARSE</button></div>
+    </form> 
   </div>
 </section>
 
   <footer class="footer footer-margin">
     <div class="footer-info">
-      <a href="#"><img src="../assets/images/Paci-logo.svg" class="footer-logo"></a>
+      <a href="#"><img src="./assets/images/Paci-logo.svg" class="footer-logo"></a>
       <div class="footer-item">
         <h5 class="footer-header padding-footer">Contacto</h5>
         <a href="#" class="footer-link padding-footer">Contacto con ventas</a>
@@ -148,8 +137,6 @@
       </div>
     </div>
   </footer> 
-  <script src="../assets/javascripts/jquery.waypoints.min.js"></script>
-  <script src="../assets/javascripts/waypoints.js"></script>
-  <script src="../assets/javascripts/inview.min.js"></script>
-  </body>
-</html>
+  <script src="./assets/javascripts/jquery.waypoints.min.js"></script>
+  <script src="./assets/javascripts/waypoints.js"></script>
+  <script src="./assets/javascripts/inview.min.js"></script>
